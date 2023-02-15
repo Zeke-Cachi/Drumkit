@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>JS Drumkit</title>
+</head>
+<body>
+    <main>
+        <h1>JS Drumkit</h1>
+        <div class="controls">
+            <div>
+                <p>A</p>
+                <p>SNARE</p>
+            </div>
+            <div>
+                <p>F</p>
+                <p>KICK DRUM</p>
+            </div>
+            <div>
+                <p>S</p>
+                <p>HI HAT</p>
+            </div>
+            <div>
+                <p>D</p>
+                <p>CRASH CYMBAL</p>
+            </div>
+            <div>
+                <p>W</p>
+                <p>RACK TOM</p>
+            </div>
+            <div>
+                <p>E</p>
+                <p>FLOOR TOM</p>
+            </div>
+
+        </div>
+
+        <div class="cymbals">
+            <button id="hihatButton" class="hihat">S
+                <audio id="hiHat" src="./drums/HI HAT.wav"></audio>
+            </button>
+            <button id="crashButton" class="crash">D
+                <audio id="crash" src="./drums/CRASH.wav"></audio>
+            </button>
+        </div>
+
+        <div class="rackdrums">
+            <button id="snareButton" class="snare">A
+                <audio id="snare" src="./drums/SNARE.wav"></audio>
+            </button>
+            <button id="tom1Button" class="racktom">W
+                <audio id="tom1" src="./drums/TOM1.wav"></audio>
+            </button>
+            <button id="tom2Button" class="floortom">E
+                <audio id="tom2" src="./drums/TOM2.wav"></audio>
+            </button>
+        </div>
+
+        <div class="kickdiv">
+            <button id="kickButton" class="kick">F
+                <audio id="kick" src="./drums/KICK.wav"></audio>
+            </button>
+        </div>
+
+
+    </main>
+
+    <script src="./script/index.js"></script>
+</body>
+</html>

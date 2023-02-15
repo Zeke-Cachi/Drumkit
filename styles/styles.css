@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    background-image: linear-gradient(90deg, rgb(0, 0, 0, 0.2), rgb(0,0,0,.9)), url(../img/Hug-a-Drummer-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+    min-width: 100vw;
+    min-height: 100vh;
+
+}
+
+h1, p, button {
+    font-family: 'Rock Salt';
+    color: yellow;
+}
+
+h1, p {
+    text-shadow: 0 10px 20px rgb(156, 92, 67);
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+p {
+    font-size: .8rem;
+}
+
+button {
+    height: 150px;
+    width: 150px;
+    font-size: 3rem;
+    border-radius: 100%;
+    color: black;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10rem 8rem;
+}
+
+.crash:focus, .snare:focus, .kick:focus, .racktom:focus, .floortom:focus, .hihat:focus {
+    outline: none;
+}
+
+.when-pressed, .crash:active, .snare:active, .kick:active, .racktom:active, .floortom:active, .hihat:active {
+    color: white;
+    transform: scale(1.1);
+}
+
+.crash, .hihat {
+    font-size: 1.4rem;
+    background: linear-gradient(180deg, rgba(238,215,145,1) 23%, rgba(190,143,75,1) 100%);
+    border: 1px solid rgb(163, 120, 60);
+    box-shadow: 0 5px 0 rgb(163, 120, 60);
+}
+
+.snare, .floortom {
+    z-index: 4;
+    margin-top: 3rem;
+}
+
+.snare, .floortom, .racktom, .kick {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 3%, rgb(180, 180, 180) 100%);
+    border: 5px solid #8E8F9F;
+    box-shadow: 0 10px 0 #72737a;
+}
+
+.hihat {
+    z-index: 5;
+    height: 50px;
+    width: 230px;
+    margin-right: 5rem;
+    margin-top: 1rem;
+}
+
+.kick {
+    height: 15rem;
+    width: 15rem;
+}
+
+.kickdiv {
+    width: 100%;
+}
+
+.racktom {
+    z-index: 6;
+    margin: 0 5rem;
+}
+
+.crash {
+    width: 280px;
+    height: 80px;
+    margin-left: 5rem;
+}
+
+.cymbals, .rackdrums, .kickdiv {
+    display: flex;
+    justify-content: center;
+}
+
+.controls div {
+    text-align: center;
+    margin: 0 .5rem;
+}
+
+
+@media screen and (max-width: 686px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: .6rem;
+        justify-content: space-between;
+    }
+
+    .crash, .hihat {
+        font-size: 1.2rem;
+    }
+
+    .crash {
+        width: 180px;
+        height: 50px;
+        margin-left: 2rem;
+    }
+
+    .hihat {
+        height: 40px;
+        width: 120px;
+        margin-right: 2rem;
+    }
+
+    button {
+        height: 100px;
+        width: 100px;
+        font-size: 1.5rem;
+    }
+
+    .kick {
+        height: 10rem;
+        width: 10rem;
+    }
+
+    .racktom {
+        margin: 0 2rem;
+    }
+
+    .cymbals {
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width:390px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: .5rem;
+    }
+
+    .crash, .hihat {
+        font-size: 1rem;
+    }
+
+    .crash {
+        width: 130px;
+        height: 50px;
+        margin-left: 1rem
+    }
+
+    .hihat {
+        height: 35px;
+        width: 90px;
+        margin-right: 1rem;
+    }
+
+    button {
+        height: 80px;
+        width: 80px;
+        font-size: 1rem;
+    }
+
+    .kick {
+        height: 9rem;
+        width: 9rem;
+    }
+
+    .racktom {
+        margin: 0 1rem;
+    }
+
+    .cymbals {
+        margin-bottom: 1.5rem;
+    }
+
+    .controls {
+        margin-bottom: 4rem;
+    }
+}
+
+
