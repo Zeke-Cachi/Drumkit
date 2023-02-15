@@ -43,7 +43,7 @@ button {
 .controls {
     display: flex;
     justify-content: space-around;
-    margin: 0 10rem 8rem;
+    margin: 0 10rem 1rem;
 }
 
 .crash:focus, .snare:focus, .kick:focus, .racktom:focus, .floortom:focus, .hihat:focus {
